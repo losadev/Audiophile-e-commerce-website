@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-pink: #d87d4a;
+  --color-black: #101010;
+  --color-beige: #f1f1f1;
+  --color-white: #fafafa;
+  --color-pink-secondary: #fbaf85;
+  --color-white-secondary: #ffffff;
+  --color-black-secondary: #000000;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.h1 {
+  @apply text-[56px] font-bold uppercase leading-[58px] tracking-[2px];
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.h2 {
+  @apply text-[40px] font-bold uppercase leading-[36px] tracking-[1.15px];
+}
+
+.h3 {
+  @apply text-[32px] font-bold uppercase leading-[36px] tracking-[1.15px];
+}
+
+.h4 {
+  @apply text-[28px] font-bold uppercase leading-[38px] tracking-[2px];
+}
+
+.h5 {
+  @apply text-[24px] font-bold uppercase leading-[33px] tracking-[1.7px];
+}
+
+.h6 {
+  @apply text-[18px] font-bold uppercase leading-[24px] tracking-[1.3px];
+}
+
+.overline-app {
+  @apply text-[13px] leading-[19px] tracking-[10px] uppercase;
+}
+
+.sub-title {
+  @apply font-bold text-[13px] uppercase leading-[25px] tracking-[1px];
+}
+
+.btn-primary {
+  @apply bg-[var(--color-pink)] text-[var(--color-white-secondary)] w-[160px] h-[48px] cursor-pointer hover:bg-[var(--color-pink-secondary)];
+}
+
+.btn-secondary {
+  @apply text-[var(--color-black-secondary)] bg-[var(--color-white-secondary)] w-[160px] h-[48px] cursor-pointer hover:bg-[var(--color-black-secondary)] border-2 border-[var(--color-black-secondary)] hover:text-[var(--color-white-secondary)];
+}
+
+.btn-terciary {
+  @apply w-[57.32px] h-[18px] text-[var(--color-black-secondary)] cursor-pointer hover:text-[var(--color-pink)];
+}
+
+.input {
+  @apply w-[309px] h-[81px] flex flex-col gap-1 bg-[var(--color-white-secondary)];
+
+  label {
+    @apply text-[12px] font-bold;
+  }
+  input {
+    @apply flex-1 rounded-lg border border-[#CFCFCF] outline-none focus:border-[var(--color-pink)] focus:ring-1 focus:ring-[var(--color-pink)] px-4 font-bold text-[14px] caret-[var(--color-pink)];
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.field-error {
+  @apply outline-none focus:border-[#CD2C2C] focus:ring-1 focus:ring-[#CD2C2C];
+}
+
+.btn_numbers {
+  @apply bg-[var(--color-beige)] w-30 h-12 flex p-3.5 justify-center gap-6;
+  button {
+    @apply text-[var(--color-black)] hover:text-[var(--color-pink)] cursor-pointer p-2 flex justify-center items-center;
+  }
 }

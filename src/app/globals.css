@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+html {
+  @apply h-full w-full scroll-smooth;
+}
+
+body {
+  @apply h-full w-full;
+}
+
 @theme {
   --color-pink: #d87d4a;
   --color-black: #101010;
@@ -74,4 +82,8 @@
   button {
     @apply text-[var(--color-black)] hover:text-[var(--color-pink)] cursor-pointer p-2 flex justify-center items-center;
   }
+}
+
+.navbar {
+  @apply bg-[var(--color-black)] w-full py-8 px-6 flex justify-between items-center;
 }

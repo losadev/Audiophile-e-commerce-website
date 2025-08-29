@@ -1,10 +1,12 @@
 import ButtonShop from "./components/ButtonShop";
 import CustomInput from "./components/CustomInput";
+import NavBar from "./components/NavBar";
 import NumbersButton from "./components/NumbersButton";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+    <div className="">
+      <NavBar algo="" />
       <h1 className="h1 text-[var(--color-pink)]">HOLA MUNDO</h1>
       <h2 className="h2">H2</h2>
       <h4 className="h4">h4</h4>

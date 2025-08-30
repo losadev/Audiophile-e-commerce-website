@@ -51,7 +51,7 @@ body {
 }
 
 .btn-primary {
-  @apply bg-[var(--color-pink)] text-[var(--color-white-secondary)] w-[160px] h-[48px] cursor-pointer hover:bg-[var(--color-pink-secondary)];
+  @apply bg-[var(--color-pink)] text-[var(--color-white-secondary)] uppercase cursor-pointer w-[160px] h-[48px]  hover:bg-[var(--color-pink-secondary)];
 }
 
 .btn-secondary {
@@ -59,7 +59,7 @@ body {
 }
 
 .btn-terciary {
-  @apply w-[57.32px] h-[18px] text-[var(--color-black-secondary)] cursor-pointer hover:text-[var(--color-pink)];
+  @apply w-[57.32px] h-[18px] flex items-center text-gray-500 cursor-pointer hover:text-[var(--color-pink)];
 }
 
 .input {

@@ -7,8 +7,8 @@ function ButtonShop() {
       <Image
         src={"/arrow-shop.svg"}
         alt="arrow shop"
-        width={10}
-        height={10}
+        width={8}
+        height={8}
       ></Image>
     </button>
   );

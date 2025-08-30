@@ -2,11 +2,13 @@ import ButtonShop from "./components/ButtonShop";
 import CustomInput from "./components/CustomInput";
 import NavBar from "./components/NavBar";
 import NumbersButton from "./components/NumbersButton";
+import Home from "./home/page";
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="">
       <NavBar algo="" />
+      <Home />
       <h1 className="h1 text-[var(--color-pink)]">HOLA MUNDO</h1>
       <h2 className="h2">H2</h2>
       <h4 className="h4">h4</h4>

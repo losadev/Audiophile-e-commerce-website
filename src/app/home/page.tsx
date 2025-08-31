@@ -20,8 +20,8 @@ function Home() {
           <button className="btn-primary sub-title">See product</button>
         </div>
       </section>
-      <div className="p-8 space-y-32">
-        <section className="flex flex-col gap-16 ">
+      <div className="p-8">
+        <section className="flex flex-col gap-8">
           <CategoryCard
             alt="headphones"
             src="/assets/home/mobile/image-removebg-headphones.png"
@@ -39,7 +39,7 @@ function Home() {
           />
         </section>
 
-        <section className="bg-[var(--color-pink)] flex flex-col items-center rounded-lg relative py-8">
+        <section className="bg-[var(--color-pink)] flex flex-col items-center rounded-lg relative py-8 mt-32">
           {/*ANILLO EXTERIOR*/}
           <div className="border-[var(--color-white-secondary)] rounded-full p-4 border w-full absolute top-0 ">
             {/*ANILLOS INTERIOR*/}
@@ -66,6 +66,40 @@ function Home() {
             </button>
           </div>
         </section>
+        <section className="rounded-lg bg-[url('/assets/home/mobile/image-speaker-zx7.jpg')] h-80 bg-cover flex items-center mt-8">
+          <div className="space-y-4 px-8">
+            <h4 className="h4">ZX7 SPEAKER</h4>
+            <button className="btn-secondary sub-title">See product</button>
+          </div>
+        </section>
+
+        <section className="h-50 bg-[url('/assets/home/mobile/image-earphones-yx1.jpg')] rounded-lg bg-cover mt-8"></section>
+
+        <section className="h-50 bg-[var(--color-beige)] mt-8 rounded-lg pl-6 py-[41px] pr-14 space-y-4">
+          <h4 className="text-[28px] font-bold">YX1 EARPHONES </h4>
+          <button className="btn-secondary sub-title">See product</button>
+        </section>
+        <section className="min-h-[698px] flex flex-col gap-8 text-center my-24">
+          <Image
+            src={"/assets/shared/mobile/image-best-gear.jpg"}
+            width={300}
+            height={600}
+            alt="person"
+            className="rounded-lg "
+          />
+          <h4 className="h4">
+            Bringing you the{" "}
+            <span className="text-[var(--color-pink)]">best</span> audio gear
+          </h4>
+          <p className="text-[15px] text-gray-500">
+            Located at the heart of New York City, Audiophile is the premier
+            store for high end headphones, earphones, speakers, and audio
+            accessories. We have a large showroom and luxury demonstration rooms
+            available for you to browse and experience a wide range of our
+            products. Stop by our store to meet some of the fantastic people who
+            make Audiophile the best place to buy your portable audio equipment.
+          </p>
+        </section>
         <section>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
@@ -74,8 +108,6 @@ function Home() {
             repudiandae?
           </p>
         </section>
-
-        <section className="rounded-lg"></section>
       </div>
     </main>
   );

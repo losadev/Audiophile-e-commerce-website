@@ -55,7 +55,7 @@ body {
 }
 
 .btn-secondary {
-  @apply w-[160px] h-[48px] cursor-pointer hover:bg-[var(--color-black-secondary)] border-2 border-[var(--color-black-secondary)] hover:text-[var(--color-white-secondary)];
+  @apply w-[160px] h-[48px] cursor-pointer hover:bg-[var(--color-black-secondary)] border-1 border-[var(--color-black-secondary)] hover:text-[var(--color-white-secondary)];
 }
 
 .btn-terciary {

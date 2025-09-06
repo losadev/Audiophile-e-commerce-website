@@ -47,7 +47,7 @@ body {
 }
 
 .sub-title {
-  @apply font-bold text-[13px] uppercase leading-[25px] tracking-[1px];
+  @apply font-bold text-[14px] uppercase leading-[25px] tracking-[1px];
 }
 
 .btn-primary {
@@ -86,4 +86,8 @@ body {
 
 .navbar {
   @apply bg-[var(--color-black)] w-full py-8 px-6 flex justify-between items-center;
+}
+
+@layer components {
+  /* Removed @screen sm block due to missing 'sm' screen in theme config */
 }

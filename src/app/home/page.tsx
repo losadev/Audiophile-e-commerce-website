@@ -3,23 +3,42 @@ import CategoryCard from "../components/CategoryCard";
 
 function Home() {
   return (
-    <main className="h-full">
-      <section
-        className="relative min-h-[560px] bg-[url('/assets/home/mobile/image-header.jpg')] bg-cover bg-no-repeat bg-bottom text-white
-"
-      >
-        <div className="h-screen px-6 text-center flex flex-col justify-center items-center gap-6">
-          <p className="overline-app">NEW PRODUCT</p>
-          <h1 className="text-[36px] font-bold uppercase">
-            XX99 Mark II HeadphoneS
-          </h1>
-          <p className="font-medium text-[15px]">
-            Experience natural, lifelike audio and exceptional build quality
-            made for the passionate music enthusiast.
-          </p>
-          <button className="btn-primary sub-title">See product</button>
+    <main>
+      <section className="w-full flex justify-center bg-black text-white">
+        {/* Lienzo igual a Figma mobile */}
+        <div className="relative w-full aspect-[375/560] overflow-hidden">
+          {/* Imagen */}
+          <Image
+            src="/assets/home/mobile/image-header.jpg"
+            alt="hero"
+            fill
+            priority
+            className="object-cover object-bottom"
+          />
+
+          {/* Overlay oscurecido (top) */}
+          <div
+            className="absolute inset-0 pointer-events-none 
+                    bg-gradient-to-b from-black/60 via-black/20 to-transparent"
+          />
+
+          {/* Contenido */}
+          <div className="absolute inset-0 px-6 flex flex-col items-center justify-center gap-6 text-center">
+            <p className="tracking-[0.4em] text-xs text-white/70">
+              NEW PRODUCT
+            </p>
+            <h1 className="text-4xl font-bold uppercase leading-tight">
+              XX99 MARK II HEADPHONES
+            </h1>
+            <p className="text-sm text-white/90 max-w-[32ch]">
+              Experience natural, lifelike audio and exceptional build quality
+              made for the passionate music enthusiast.
+            </p>
+            <button className="btn-primary sub-title">SEE PRODUCT</button>
+          </div>
         </div>
       </section>
+
       <div className="p-8">
         <section className="flex flex-col gap-8">
           <CategoryCard
@@ -79,12 +98,12 @@ function Home() {
           <h4 className="text-[28px] font-bold">YX1 EARPHONES </h4>
           <button className="btn-secondary sub-title">See product</button>
         </section>
-        <section className="min-h-[698px] flex flex-col gap-8 text-center my-24">
+        <section className=" flex flex-col gap-8 text-center my-24">
           <Image
             src={"/assets/shared/mobile/image-best-gear.jpg"}
-            width={300}
-            height={600}
             alt="person"
+            height={300}
+            width={600}
             className="rounded-lg "
           />
           <h4 className="h4">
@@ -98,14 +117,6 @@ function Home() {
             available for you to browse and experience a wide range of our
             products. Stop by our store to meet some of the fantastic people who
             make Audiophile the best place to buy your portable audio equipment.
-          </p>
-        </section>
-        <section>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            alias, nemo nostrum, laborum iure ratione, sit soluta culpa quasi
-            provident velit unde repellat quos? Sed id nihil suscipit vel
-            repudiandae?
           </p>
         </section>
       </div>
